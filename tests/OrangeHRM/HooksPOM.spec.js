@@ -10,7 +10,7 @@ test.describe('Hooks with Page Object Model',() => {
     let Logoutapp
 
     //Before Hooks - Login Page
-    test.beforeEach(async({page})=>{
+    test.beforeAll(async({page})=>{
     console.log("Navigate to swaglab page and perform Login")
     LoginPage = new LoginSwag(page)
     
