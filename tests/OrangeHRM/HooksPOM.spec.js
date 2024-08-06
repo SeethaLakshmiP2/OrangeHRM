@@ -11,7 +11,7 @@ test.describe('Hooks with Page Object Model',() => {
 
     //Before Hooks - Login Page
     test.beforeEach(async({page})=>{
-    console.log("Navigate to swaglab page and perform Login")
+    console.log("Navigate to swaglab page and perform Login functionality")
     LoginPage = new LoginSwag(page)
     
     })
@@ -24,7 +24,7 @@ test.describe('Hooks with Page Object Model',() => {
 
     //Add to cart
     test('Add an item to the Cart', async({page}) => {
-    console.log("Add item to cart")
+    console.log("Add an item to cart")
     AddCartLogout = new InventoryPage(page)
     })
 
