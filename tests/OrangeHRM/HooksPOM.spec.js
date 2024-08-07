@@ -11,14 +11,14 @@ test.describe('Hooks with Page Object Model',() => {
 
     //Before Hooks - Login Page
     test.beforeEach(async({page})=>{
-    console.log("Navigate to swaglab page and perform Login functionality")
+    console.log("Navigate to swaglab login page and perform Login functionality...")
     LoginPage = new LoginSwag(page)
     
     })
 
     //After Hooks - Logout page
     test.afterEach(async ({ page }) => {
-    console.log("Logout after each test script")
+    console.log("Logout the application after each test script")
     Logoutapp = new LogoutFunc(page)
     })
 
